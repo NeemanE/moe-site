@@ -10,6 +10,7 @@ import Services from './components/Services';
 import Pricing from './components/Pricing';
 import Affiliates from './components/Affiliates';
 import Reviews from './components/Reviews';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App() {
   return (
