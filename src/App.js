@@ -14,9 +14,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App() {
   return (
-    <div className="App">
+    <main>
       <Header />
-      <Navbar />
+      {/* <Navbar />
       <Hero />
       <Services />
       <Pricing />
@@ -24,7 +24,7 @@ export default function App() {
       <Reviews />
       <Contact />
       <Affiliates />
-      <Footer />
-    </div>
+      <Footer /> */}
+    </main>
   );
 }
