@@ -14,9 +14,9 @@ export default function Header() {
                     <Col className="text-center"><FaEnvelope />  info@protocallfinancial.com</Col>
                     <Col className="text-center"><FaLocationArrow />  9900 West Park Suite 138, Houston, TX 77063</Col>
                     <Col className="d-flex gap-5 justify-content-center">
-                    <a href="https://twitter.com/protocall2020"><FaTwitter size={'5vh'} /></a>
-                    <a href="https://www.linkedin.com/company/protocall-financial/"><FaLinkedinIn size={'5vh'} /></a>
-                    <a href="https://www.facebook.com/protocallfinancial/"><FaFacebook size={'5vh'} /></a>
+                    <a href="https://twitter.com/protocall2020"><FaTwitter size={'2vw'} /></a>
+                    <a href="https://www.linkedin.com/company/protocall-financial/"><FaLinkedinIn size={'2vw'} /></a>
+                    <a href="https://www.facebook.com/protocallfinancial/"><FaFacebook size={'2vw'} /></a>
                     </Col>
                 </Row>
             </Container>

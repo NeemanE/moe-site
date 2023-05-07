@@ -10,16 +10,18 @@ import Services from './components/Services';
 import Pricing from './components/Pricing';
 import Affiliates from './components/Affiliates';
 import Reviews from './components/Reviews';
+import HeroCard from './components/HeroCard';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App() {
   return (
     <main>
       <Header />
-      {/* <Navbar />
+      <Navbar />
       <Hero />
+      <HeroCard />
       <Services />
-      <Pricing />
+      {/* <Pricing />
       <Faq />
       <Reviews />
       <Contact />
