@@ -11,7 +11,7 @@ export default function Navbar() {
                 <a href="https://protocallfinancial.com/"><img src={protocallLogo} alt="Protocall Financial Logo" /></a>
             </div>
             <div className="navDirect">
-                <ul>
+                <ul className="navList">
                     <li><a href="https://protocallfinancial.com/">Home</a></li>
                     <li><a href="https://protocallfinancial.com/services">Services</a></li>
                     <li><a href="https://protocallfinancial.com/pricing">Pricing</a></li>

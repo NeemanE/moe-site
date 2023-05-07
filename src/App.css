@@ -13,7 +13,7 @@
   border: 1px solid black;
 }
 
-li{
+.navList li{
   list-style-type: none;
   display: inline;
   margin: 1rem;
