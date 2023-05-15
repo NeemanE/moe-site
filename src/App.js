@@ -22,8 +22,8 @@ export default function App() {
       <HeroCard />
       <Services />
       <Pricing />
-      {/* <Faq />
-      <Reviews />
+      <Faq />
+    {/*   <Reviews />
       <Contact />
       <Affiliates />
       <Footer /> */}

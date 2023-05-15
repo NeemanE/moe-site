@@ -37,7 +37,7 @@ export default function Pricing() {
 
             <div>
                 <div>
-                    <h2>START SEEING RESULTS IN AS LITTLE AS 30 DAYS! 30 DAYS!</h2>
+                    <h2>START SEEING RESULTS IN AS LITTLE AS 30 DAYS!</h2>
                 </div>
                 <div> 
                     <h2>We Remove Errors Such As:</h2>
