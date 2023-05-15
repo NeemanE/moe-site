@@ -23,8 +23,8 @@ export default function App() {
       <Services />
       <Pricing />
       <Faq />
-    {/*   <Reviews />
-      <Contact />
+      <Reviews />
+     {/*  <Contact />
       <Affiliates />
       <Footer /> */}
     </main>
