@@ -12,6 +12,9 @@ import Affiliates from './components/Affiliates';
 import Reviews from './components/Reviews';
 import HeroCard from './components/HeroCard';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import privacyPolicyData from './privacyPolicy.json';
+import termsOfUseData from './termsOfUse.json';
+import returnPolicyData from './returnPolicy.json';
 
 export default function App() {
   return (
@@ -24,9 +27,12 @@ export default function App() {
       <Pricing />
       <Faq />
       <Reviews />
-     {/*  <Contact />
-      <Affiliates />
-      <Footer /> */}
+      <Contact />
+      {/*       <Affiliates />
+ */}      <Footer
+        privacyPolicyData={privacyPolicyData}
+        termsOfUseData={termsOfUseData}
+        returnPolicyData={returnPolicyData} />
     </main>
   );
 }
