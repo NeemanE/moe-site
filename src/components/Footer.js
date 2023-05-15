@@ -24,8 +24,8 @@ const Footer = ({ privacyPolicyData, termsOfUseData, returnPolicyData }) => {
         <footer>
             <div>
                 <div>
-                    <img src={protocallLogo} alt="Protocall Financial logo" />
-                </div>
+{/*                     <img src={protocallLogo} alt="Protocall Financial logo" />
+ */}                </div>
                 <div>
                     <a href="#" onClick={() => openContentInNewTab(privacyPolicyData)}>
                         View Privacy Policy

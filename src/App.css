@@ -1,36 +1,146 @@
-.navLogo{
-  float: left;
+
+header{
+    background-color: #0F3D62;
+    color: white;
+    padding: 1vw;
+}
+
+header span{
+  margin: 5px;
+}
+
+.navbar img{
   width: 15vw;
-  height: auto;
+  margin-left: 3vw;
 }
 
-.cssTest{
-  border: 1px solid black;
-}
-
-.navbar{
-  margin : 2rem;
-  border: 1px solid black;
-}
-
-.navList li{
+.navList{
   list-style-type: none;
-  display: inline;
-  margin: 1rem;
+  font-size: large;
+  color: #0983BB;
 }
 
-.navbar div a img{
-  margin-left: 5vw;
-  width: 10vw;
-  height: auto;
+.navList li a:hover {
+  color: #0F3D62;
+  text-decoration: underline;
+}
+
+
+.navDirect a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navDirect ul {
+  display: flex;
+}
+
+.navDirect li {
+  margin: 0 1.2vw;
+}
+
+.buttonContainer {
+  display: flex;
+}
+
+.buttonContainer .btn {
+  width: 9vw;
+  margin-right: 2vw;
+  background-color: #39c0ee;
+  border: none;
 }
 
 .hero-background{
-  background-image: url(./img/hero-background.jpg);
+  background-image: url("./img/hero-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 0 20vw;
 }
 
-.card{
-  max-width: 20%;
-  margin-left: 20vw;
-  margin-top: 10vh;
+.hero-background h1{
+  margin-bottom: 3vw;
+}
+
+.hero-background p{
+  font-size: large;
+  margin-bottom: 3vw;
+}
+
+.hero-background .btn{
+  margin: 0 3vw;
+  padding: 0.5vw;
+  text-decoration: underline;
+  font-weight: 400;
+  width: 20vw;
+  background-color: #39c0ee;
+}
+
+.creditworthy{
+  margin: 5vh 0;
+  text-align: center;
+}
+
+.hero-cardgroup{
+  margin: 0 15vw;
+  text-align: center;
+}
+
+.hero-card{
+  height: 30vh !important;
+  margin: 0 1vw;
+  border-color: black !important;
+  border-left: black 1px solid !important;
+}
+
+.hero-card img{
+  width: 3vw;
+  margin: 1vw 0;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 5vh;
+  align-items: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  background-color: #f8f8f8;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 20px; /* Adjust the spacing as needed */
+}
+
+.hero-logo {
+  flex: 0;
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+
+.hero-logo img {
+  max-height: 205px;
+  max-width: 420px; /* Adjust the height as needed */
+  margin-right: 10px; /* Adjust the spacing as needed */
+}
+
+.service-cardgroup1{
+  margin: 5vh 10vw;
+  text-align: center;
+}
+
+.service-cardgroup2{
+  text-align: center;
+  margin: 5vh 7vw;
 }

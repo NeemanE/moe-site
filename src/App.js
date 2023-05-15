@@ -28,8 +28,7 @@ export default function App() {
       <Faq />
       <Reviews />
       <Contact />
-      {/*       <Affiliates />
- */}      <Footer
+      <Footer
         privacyPolicyData={privacyPolicyData}
         termsOfUseData={termsOfUseData}
         returnPolicyData={returnPolicyData} />
