@@ -1,20 +1,19 @@
-
-header{
-    background-color: #0F3D62;
-    color: white;
-    padding: 1vw;
+header {
+  background-color: #0F3D62;
+  color: white;
+  padding: 1vw;
 }
 
-header span{
+header span {
   margin: 5px;
 }
 
-.navbar img{
+.navbar img {
   width: 15vw;
   margin-left: 3vw;
 }
 
-.navList{
+.navList {
   list-style-type: none;
   font-size: large;
   color: #0983BB;
@@ -50,7 +49,7 @@ header span{
   border: none;
 }
 
-.hero-background{
+.hero-background {
   background-image: url("./img/hero-background.jpg");
   background-size: cover;
   background-position: center;
@@ -65,16 +64,16 @@ header span{
   padding: 0 20vw;
 }
 
-.hero-background h1{
+.hero-background h1 {
   margin-bottom: 3vw;
 }
 
-.hero-background p{
+.hero-background p {
   font-size: large;
   margin-bottom: 3vw;
 }
 
-.hero-background .btn{
+.hero-background .btn {
   margin: 0 3vw;
   padding: 0.5vw;
   text-decoration: underline;
@@ -83,24 +82,24 @@ header span{
   background-color: #39c0ee;
 }
 
-.creditworthy{
+.creditworthy {
   margin: 5vh 0;
   text-align: center;
 }
 
-.hero-cardgroup{
+.hero-cardgroup {
   margin: 0 15vw;
   text-align: center;
 }
 
-.hero-card{
+.hero-card {
   height: 30vh !important;
   margin: 0 1vw;
   border-color: black !important;
   border-left: black 1px solid !important;
 }
 
-.hero-card img{
+.hero-card img {
   width: 3vw;
   margin: 1vw 0;
 }
@@ -120,7 +119,7 @@ header span{
 
 .hero-text {
   flex: 1;
-  padding-right: 20px; 
+  padding-right: 20px;
 }
 
 .hero-logo {
@@ -131,16 +130,16 @@ header span{
 
 .hero-logo img {
   max-height: 205px;
-  max-width: 420px; 
-  margin-right: 10px; 
+  max-width: 420px;
+  margin-right: 10px;
 }
 
-.service-cardgroup1{
+.service-cardgroup1 {
   margin: 5vh 10vw;
   text-align: center;
 }
 
-.service-cardgroup2{
+.service-cardgroup2 {
   text-align: center;
   margin: 5vh 10vw;
 }
@@ -156,30 +155,30 @@ header span{
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
- 
+
 }
 
 .text-container {
-  width: 50%; 
+  width: 50%;
   margin-top: 25%;
   padding: 0 5vw;
 }
 
-.text-container h2{
+.text-container h2 {
   font-weight: lighter;
 }
 
 .circle-stack {
   display: flex;
   flex-direction: column;
-  width: 50%; 
+  width: 50%;
   padding: 0 5vw;
 }
 
 .circle {
-  
+
   width: 150px;
-  height: 150px; 
+  height: 150px;
   background-color: #eaeaea;
   border: 5px solid #0F3D62;
   border-radius: 50%;
@@ -189,11 +188,11 @@ header span{
   margin-top: 2vh;
 }
 
-.circle1{
+.circle1 {
   margin-bottom: 20px;
 }
 
-.circle2{
+.circle2 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -213,28 +212,29 @@ header span{
   align-items: center;
   margin-bottom: 20px;
   border: 1px solid rgb(105, 105, 105);
-  background-color: #f8f8f8; 
-    box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.3); 
+  background-color: #f8f8f8;
+  box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.3);
 
 }
 
-.circle-container h1, .circle-container h2{
+.circle-container h1,
+.circle-container h2 {
   margin-top: 1vh;
   text-align: center;
   margin-bottom: 2vh;
 }
 
-.price-background{
+.price-background {
   background-color: #0F3D62;
   color: white;
   width: 100%;
 }
 
-.price-background h1{
+.price-background h1 {
   font-size: x-large;
 }
 
-.price-background h2{
+.price-background h2 {
   font-size: large;
   font-weight: lighter;
 }
@@ -244,29 +244,29 @@ header span{
   padding: 0;
   line-height: 2.5;
   text-align: center;
- 
+
 }
 
-.price-cost{
+.price-cost {
   font-size: xx-large;
 }
 
 .errors-list {
   list-style-type: none;
   padding-left: 20px;
-  
+
 }
 
-.price-image{
+.price-image {
   background-image: url("./img/credit-score.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 50vh; 
+  height: 50vh;
   display: flex;
 }
 
-.pricing-container2{
+.pricing-container2 {
   margin-top: 10vh;
   color: white;
   text-shadow: 3px 3px 3px #000000;
@@ -277,7 +277,7 @@ header span{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; 
+  height: 100%;
 }
 
 .results-container {
@@ -287,7 +287,8 @@ header span{
   align-items: center;
   height: 100%;
 }
-Button.container-button{
+
+Button.container-button {
   margin-bottom: 2vh;
   background-color: #39c0ee;
   border: none;
@@ -303,22 +304,22 @@ Button.container-button{
 .fancy-underline::after {
   content: "";
   position: absolute;
-  bottom: -3px; 
+  bottom: -3px;
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #000; 
+  background-color: #000;
 }
 
-.faq-title{
+.faq-title {
   text-align: center;
 }
 
-.faq-title h1{
+.faq-title h1 {
   font-weight: bold;
 }
 
-.faq-title h2{
+.faq-title h2 {
   font-weight: lighter;
   font-size: x-large;
   margin-bottom: 3vh;
@@ -345,4 +346,99 @@ Button.container-button{
   background-color: #ffffff;
   padding: 20px;
   border: 1px solid #c6c6c6;
+}
+
+.carousel-image {
+  background-image: url("./img/woman-at-pc.jpg");
+  margin: 0 15vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0 5vw;
+  text-align: center;
+}
+
+#contact {
+  margin: 10vh 10vw;
+  background-color: #f8f8f8;
+  padding: 5vh 0;
+}
+
+.contact-blurb {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.contact-blurb h1 {
+  margin-top: 1vh;
+  font-weight: bold;
+}
+
+.contact-blurb h2 {
+
+  font-weight: lighter;
+  font-size: xx-large;
+}
+
+.contact-blurb h3{
+  margin-top: 2vh;
+  font-weight: lighter;
+  font-size: x-large;
+}
+
+Button.form-button {
+  margin-top: 2vh;
+  background-color: #39c0ee;
+  border: none;
+
+}
+
+.transparent-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  outline: none;
+}
+
+.transparent-input:focus {
+  border-bottom: 1px solid blue; /* Customize the color for the focused state */
+}
+
+footer{
+  background-color: #f8f8f8;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10vw;
+}
+
+.logo-container img {
+  width: 15vw;
+}
+
+.links-container {
+  display: flex;
+}
+
+.links-container a {
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 1vw;
+  color: #7a7a7a;
+}
+
+.copy-container {
+  margin: 0 10vw;
+  margin-top: 10px; 
+  padding-top: 5vh;
+  text-align: center;
+  border-top: 1px dashed black;
 }
