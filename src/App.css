@@ -309,3 +309,40 @@ Button.container-button{
   height: 2px;
   background-color: #000; 
 }
+
+.faq-title{
+  text-align: center;
+}
+
+.faq-title h1{
+  font-weight: bold;
+}
+
+.faq-title h2{
+  font-weight: lighter;
+  font-size: x-large;
+  margin-bottom: 3vh;
+}
+
+.accordion-container-wrapper {
+  display: flex;
+  margin: 0 10vw;
+  margin-bottom: 10vh;
+}
+
+.accordion-container {
+  flex: 1;
+}
+
+
+
+.accordion-container .accordion-header {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.accordion-container .accordion-body {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #c6c6c6;
+}
