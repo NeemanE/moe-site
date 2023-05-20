@@ -120,19 +120,19 @@ header span{
 
 .hero-text {
   flex: 1;
-  padding-right: 20px; /* Adjust the spacing as needed */
+  padding-right: 20px; 
 }
 
 .hero-logo {
   flex: 0;
   display: flex;
-  align-items: center; /* Center vertically */
+  align-items: center;
 }
 
 .hero-logo img {
   max-height: 205px;
-  max-width: 420px; /* Adjust the height as needed */
-  margin-right: 10px; /* Adjust the spacing as needed */
+  max-width: 420px; 
+  margin-right: 10px; 
 }
 
 .service-cardgroup1{
@@ -142,5 +142,170 @@ header span{
 
 .service-cardgroup2{
   text-align: center;
-  margin: 5vh 7vw;
+  margin: 5vh 10vw;
+}
+
+#pricing {
+  padding-top: 10vh;
+  margin: 10vh 10vw;
+  background-color: #f8f8f8;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+ 
+}
+
+.text-container {
+  width: 50%; 
+  margin-top: 25%;
+  padding: 0 5vw;
+}
+
+.text-container h2{
+  font-weight: lighter;
+}
+
+.circle-stack {
+  display: flex;
+  flex-direction: column;
+  width: 50%; 
+  padding: 0 5vw;
+}
+
+.circle {
+  
+  width: 150px;
+  height: 150px; 
+  background-color: #eaeaea;
+  border: 5px solid #0F3D62;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.circle1{
+  margin-bottom: 20px;
+}
+
+.circle2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.circle h3 {
+  font-size: medium;
+  line-height: 1.2;
+  color: #0F3D62;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.circle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid rgb(105, 105, 105);
+  background-color: #f8f8f8; 
+    box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.3); 
+
+}
+
+.circle-container h1, .circle-container h2{
+  margin-top: 1vh;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+.price-background{
+  background-color: #0F3D62;
+  color: white;
+  width: 100%;
+}
+
+.price-background h1{
+  font-size: x-large;
+}
+
+.price-background h2{
+  font-size: large;
+  font-weight: lighter;
+}
+
+.price-list {
+  list-style-type: none;
+  padding: 0;
+  line-height: 2.5;
+  text-align: center;
+ 
+}
+
+.price-cost{
+  font-size: xx-large;
+}
+
+.errors-list {
+  list-style-type: none;
+  padding-left: 20px;
+  
+}
+
+.price-image{
+  background-image: url("./img/credit-score.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh; 
+  display: flex;
+}
+
+.pricing-container2{
+  margin-top: 10vh;
+  color: white;
+  text-shadow: 3px 3px 3px #000000;
+  padding: 0 3vw;
+}
+
+.text-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+Button.container-button{
+  margin-bottom: 2vh;
+  background-color: #39c0ee;
+  border: none;
+  text-decoration: underline;
+  ;
+}
+
+
+.fancy-underline {
+  position: relative;
+}
+
+.fancy-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -3px; 
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000; 
 }
