@@ -499,7 +499,7 @@ footer {
   font-size: 3vw;
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 450px) {
   header {
     margin: 0;
     padding: 0;
