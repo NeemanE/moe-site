@@ -1,6 +1,8 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { FaArrowCircleRight, FaCheck } from "react-icons/fa";
+import "../App.css"
+
 
 export default function Pricing() {
     return (

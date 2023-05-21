@@ -1,5 +1,7 @@
 import React from 'react';
 import protocallLogo from '../img/protocall-logo.png';
+import "../App.css"
+
 
 const Footer = ({ privacyPolicyData, termsOfUseData, returnPolicyData }) => {
   const openContentInNewTab = (contentData) => {

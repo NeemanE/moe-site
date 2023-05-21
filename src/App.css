@@ -64,6 +64,20 @@ header span {
   padding: 0 20vw;
 }
 
+.modal ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal a {
+  color: blue;
+  text-decoration: none;
+}
+
+.modal a:hover {
+  color: red; 
+}
+
 .hero-background h1 {
   margin-bottom: 3vw;
 }
@@ -74,12 +88,22 @@ header span {
 }
 
 .hero-background .btn {
-  margin: 0 3vw;
+  margin: 2vh 3vw;
   padding: 0.5vw;
   text-decoration: underline;
   font-weight: 400;
   width: 20vw;
   background-color: #39c0ee;
+  border: none;
+  text-decoration: none;
+}
+
+.hero-background .affiliate-button{
+  background-color: rgb(29, 202, 44);
+}
+
+.hero-background .affiliate-button:hover{
+  background-color: #009e08;
 }
 
 .creditworthy {
@@ -97,6 +121,11 @@ header span {
   margin: 0 1vw;
   border-color: black !important;
   border-left: black 1px solid !important;
+  transition: transform 0.3s ease;
+}
+
+.hero-card:hover {
+  transform: scale(1.1);
 }
 
 .hero-card img {
@@ -134,14 +163,30 @@ header span {
   margin-right: 10px;
 }
 
-.service-cardgroup1 {
-  margin: 5vh 10vw;
+.service-title {
+  text-align: center;
+  margin: 5vh 0;
+}
+
+.service-text {
+  text-align: center;
+  margin: 0 10vw;
+  font-weight: 350;
+  font-size: large;
+}
+
+.service-cardgroup1, .service-cardgroup2, .service-cardgroup3 {
+  margin: 5vh 15vw;
   text-align: center;
 }
 
-.service-cardgroup2 {
-  text-align: center;
-  margin: 5vh 10vw;
+
+.service-card {
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.1);
 }
 
 #pricing {
@@ -384,7 +429,7 @@ Button.container-button {
   font-size: xx-large;
 }
 
-.contact-blurb h3{
+.contact-blurb h3 {
   margin-top: 2vh;
   font-weight: lighter;
   font-size: x-large;
@@ -406,10 +451,11 @@ Button.form-button {
 }
 
 .transparent-input:focus {
-  border-bottom: 1px solid blue; /* Customize the color for the focused state */
+  border-bottom: 1px solid blue;
+  /* Customize the color for the focused state */
 }
 
-footer{
+footer {
   background-color: #f8f8f8;
 }
 
@@ -437,8 +483,9 @@ footer{
 
 .copy-container {
   margin: 0 10vw;
-  margin-top: 10px; 
+  margin-top: 10px;
   padding-top: 5vh;
   text-align: center;
   border-top: 1px dashed black;
 }
+

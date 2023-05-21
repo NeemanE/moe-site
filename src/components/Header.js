@@ -4,7 +4,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Alert } from "react-bootstrap";
 import { FaPhone, FaEnvelope, FaLocationArrow, FaTwitter, FaLinkedinIn, FaFacebook } from "react-icons/fa";
-<span></span>
+import "../App.css"
+
 export default function Header() {
     return (
         <header>
@@ -23,9 +24,9 @@ export default function Header() {
                         <span> 9900 West Park Suite 138, Houston, TX 77063</span>
                     </Col>
                     <Col className="d-flex gap-5 justify-content-center">
-                        <a href="https://twitter.com/protocall2020"><FaTwitter size={'2vw'} /></a>
-                        <a href="https://www.linkedin.com/company/protocall-financial/"><FaLinkedinIn size={'2vw'} /></a>
-                        <a href="https://www.facebook.com/protocallfinancial/"><FaFacebook size={'2vw'} /></a>
+                        <a href="https://twitter.com/protocall2020" target="_blank"><FaTwitter size={'2vw'} /></a>
+                        <a href="https://www.linkedin.com/company/protocall-financial/" target="_blank"><FaLinkedinIn size={'2vw'} /></a>
+                        <a href="https://www.facebook.com/protocallfinancial/" target="_blank"><FaFacebook size={'2vw'} /></a>
                     </Col>
                 </Row>
             </Container>

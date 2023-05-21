@@ -39,6 +39,28 @@ const Contact = () => {
             );
     };
 
+    /* Not sure if i want to use CDM provided form. not the best looking and having issues implementing iframe */
+    const iFrame = () => {
+        return (
+            <iframe
+                name='frame_lead'
+                id='frame_lead'
+                src='https://www.clientdisputemanager.com/WebLeads?crepto=241483'
+                height={400}
+                width={500}
+                data-txtheaderfontsize={10}
+                data-txtheaderfontcolor='#e8f5f7'
+                data-txtredirecturl='https://Protocallfinancial.as.me/'
+                data-txtbgcolcor='#39c0ee'
+                data-txtheadercolor='#000080'
+                data-txtbuttoncolor='#000080'
+                data-txtcolor='na'
+                onLoad='resizeIframe(this)'
+            ></iframe>
+        );
+    };
+
+
     return (
         <section id="contact">
             <div className="contact-blurb">
@@ -97,6 +119,7 @@ const Contact = () => {
                     <p><span className='bold-span'>Address:</span> 9900 West Park Suite 138, Houston, TX 77063</p>
                     <p><span className='bold-span'>Office Phone:</span> (713) 955-6346</p>
                     <p><span className='bold-span'>Email:</span> Info@protocallfinancial.com</p>
+
                 </div>
             </div>
 

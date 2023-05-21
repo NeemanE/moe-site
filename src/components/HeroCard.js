@@ -11,7 +11,7 @@ export default function HeroCard() {
     return (
         <section>
             <div className="creditworthy">
-                <h1>Become Creditworthy</h1>
+                <h1>Become <span className="fancy-underline">Creditworthy</span></h1>
             </div>
             <div>
                 <CardGroup className="hero-cardgroup">
