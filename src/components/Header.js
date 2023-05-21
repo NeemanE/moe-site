@@ -24,9 +24,9 @@ export default function Header() {
                         <span> 9900 West Park Suite 138, Houston, TX 77063</span>
                     </Col>
                     <Col className="d-flex gap-5 justify-content-center">
-                        <a href="https://twitter.com/protocall2020" target="_blank"><FaTwitter size={'2vw'} /></a>
-                        <a href="https://www.linkedin.com/company/protocall-financial/" target="_blank"><FaLinkedinIn size={'2vw'} /></a>
-                        <a href="https://www.facebook.com/protocallfinancial/" target="_blank"><FaFacebook size={'2vw'} /></a>
+                        <a className="header-logo" href="https://twitter.com/protocall2020" target="_blank"><FaTwitter /></a>
+                        <a className="header-logo" href="https://www.linkedin.com/company/protocall-financial/" target="_blank"><FaLinkedinIn /></a>
+                        <a className="header-logo" href="https://www.facebook.com/protocallfinancial/" target="_blank"><FaFacebook /></a>
                     </Col>
                 </Row>
             </Container>

@@ -40,22 +40,22 @@ export default function HeroCard() {
             </div>
 
             <div className="hero-container">
-  <div className="hero-text">
-    <h1>HAVING GREAT CREDIT IS MORE IMPORTANT THAN EVER!</h1>
-    <p>
-      We help improve your credit report and increase your credit scores!
-      We are a company with integrity.
-      Consumer and business credit experts.
-      We will be intimately involved with your credit repair experience.
-      We create disputes with the credit bureaus.
-      We're with you every step of the way.
-      We help and guide you from start to finish.
-    </p>
-  </div>
-  <div className="hero-logo">
-    <img src={protocallLogo} alt="Protocall Financial Logo" />
-  </div>
-</div>
+                <div className="hero-text">
+                    <h1>HAVING GREAT CREDIT IS MORE IMPORTANT THAN EVER!</h1>
+                    <p>
+                        We help improve your credit report and increase your credit scores!
+                        We are a company with integrity.
+                        Consumer and business credit experts.
+                        We will be intimately involved with your credit repair experience.
+                        We create disputes with the credit bureaus.
+                        We're with you every step of the way.
+                        We help and guide you from start to finish.
+                    </p>
+                </div>
+                <div className="hero-logo">
+                    <img src={protocallLogo} alt="Protocall Financial Logo" />
+                </div>
+            </div>
         </section>
     );
 }
