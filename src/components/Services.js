@@ -44,7 +44,7 @@ const Services = () => {
         <div id='services'>
             <div>
                 <h1 className='service-title'>Our Services</h1>
-                <p className='service-text'>We offer a wide range of services to help you achieve your goals. Whether you are looking to start a business, or improve your personal credit, we have the tools you need to succeed. Click below to find out more information about what we can provide for you!</p>
+                <p className='service-text'>We offer a wide range of services to help you achieve your goals. Whether you are looking to start a business, or improve your personal credit, we have the tools you need to succeed. <span>Click below</span> to find out more information about what we can provide for you!</p>
             </div>
             <div>
                 <CardGroup className='service-cardgroup1'>

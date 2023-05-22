@@ -8,6 +8,10 @@ header span {
   margin: 5px;
 }
 
+.navbar{
+  margin:0 2vw;
+}
+
 .navbar img {
   width: 15vw;
   margin-left: 3vw;
@@ -44,9 +48,12 @@ header span {
 
 .buttonContainer .btn {
   width: 9vw;
-  margin-right: 2vw;
   background-color: #39c0ee;
   border: none;
+}
+
+.login-button{
+  margin-right: 2vw;
 }
 
 .hero-background {
@@ -93,21 +100,11 @@ header span {
 
 .hero-background .btn {
   margin: 2vh 3vw;
-  padding: 0.5vw;
-  text-decoration: underline;
+  padding: 0.7vw;
   font-weight: 400;
-  width: 20vw;
-  background-color: #39c0ee;
+  width: 25vw;
   border: none;
   text-decoration: none;
-}
-
-.hero-background .affiliate-button {
-  background-color: rgb(29, 202, 44);
-}
-
-.hero-background .affiliate-button:hover {
-  background-color: #009e08;
 }
 
 .creditworthy {
@@ -137,7 +134,19 @@ header span {
   margin: 1vw 0;
 }
 
-.hero-container {
+.hero-container{
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5vh;
+  align-items: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  background-color: #f8f8f8;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+/* .hero-container {
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -149,22 +158,24 @@ header span {
   padding-top: 20vh;
   padding-bottom: 20vh;
 }
-
+ */
 .hero-text {
   flex: 1;
   padding-right: 20px;
 }
 
 .hero-logo {
-  flex: 0;
-  display: flex;
+ 
   align-items: center;
 }
 
 .hero-logo img {
   max-height: 205px;
   max-width: 420px;
-  margin-right: 10px;
+}
+
+#services span{
+  font-weight: bold;
 }
 
 .service-title {
@@ -413,6 +424,14 @@ Button.container-button {
   text-align: center;
 }
 
+.carousel-inner {
+  transition-duration: 1s;
+}
+
+.carousel-item {
+  min-height: 165px;
+}
+
 #contact {
   margin: 10vh 10vw;
   background-color: #f8f8f8;
@@ -499,6 +518,67 @@ footer {
   font-size: 3vw;
 }
 
+.hero-button {
+  align-items: center;
+  background-image: linear-gradient(135deg, #40c6f3 40%, #4d56fc);
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: .4px;
+  touch-action: manipulation;
+  text-transform: uppercase;
+}
+
+.hero-button:active {
+  outline: 0;
+}
+
+.hero-button:hover span {
+  transform: scale(.8);
+  opacity: .75;
+}
+
+.hero-button span {
+  transition: all 200ms;
+  text-align: center;
+  text-shadow: 2px 2px 5px #000000;
+
+}
+
+
+.affiliate-button {
+  background-image: linear-gradient(135deg, #55f340 40%, #3bc454);
+}
+
+.hero-background .affiliate-button:hover {
+  background-color: #009e08;
+}
+
+@media screen and (min-width:280px) and (max-width: 359px) {
+    .navbar{
+      flex-direction: column;
+    }
+
+    .navbar img{
+      width: 30vw !important;
+    }
+
+    .navList{
+      padding: 0 !important;
+      padding-top: 1vh !important;
+      font-size: medium;
+    }
+
+     ul{
+      margin-bottom: 0.5vh !important;
+    }
+
+    .navLogin{
+      margin: 0;
+      padding: 0; 
+    }
+}
+
 @media screen and (max-width: 450px) {
   header {
     margin: 0;
@@ -521,7 +601,31 @@ footer {
     padding: 2vw;
   }
 
-  .navbar {
+  .navbar{
+    flex-direction: column;
+  }
+
+  .navbar img{
+    width: 30vw;
+  }
+
+  .navList{
+    padding: 0;
+    padding-top: 1vh;
+  }
+
+  .navLogin{
+    margin: 0;
+    padding: 0; 
+  }
+
+  
+  .buttonContainer .btn{
+    width: initial;
+    font-size: x-small;
+  }
+
+ /*  .navbar {
     margin: 0;
     padding: 0;
 
@@ -534,7 +638,7 @@ footer {
 
   .navList {
     font-size: xx-small;
-    padding-right: 5vw;
+    padding-right: 3vw;
     padding-top: 3vh;
   }
 
@@ -543,16 +647,16 @@ footer {
     padding: .5vh;
     margin: 0 .8vw 0 0;
   }
-
+ */
   .hero-background {
     margin: 0;
     padding: 0 7vw;
-    height: 50vh;
+    height: 70vh;
   }
 
   .hero-background h1 {
     font-size: large;
-    
+
   }
 
   .hero-background p {
@@ -562,12 +666,12 @@ footer {
 
   .hero-background .btn {
     font-size: x-small;
-    width: 30vw;
+    width: 60vw;
     padding: 2vw;
   }
 
   .hero-card {
-    height: 25vh !important;
+    height: 30vh !important;
   }
 
   .hero-card img {
@@ -654,37 +758,126 @@ footer {
     text-underline-offset: 5px;
   }
 
-  .price-image{
+  .price-image {
     height: 60vh;
   }
 
-  .pricing-container2{
+  .pricing-container2 {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-top: 0;
   }
 
-  .text-container2{
+  .text-container2 {
     width: 100%;
     margin-top: 1vh;
     padding: 0 5vw;
     text-align: center;
   }
 
-  .results-container{
+  .results-container {
     width: 100%;
     padding: 0;
     margin-bottom: 7vh;
     text-align: center;
   }
 
-  .results-container h2{
+  .results-container h2 {
     font-size: large;
   }
 
-  .errors-list{
+  .errors-list {
     padding: 0;
     font-size: small;
+  }
+
+  .mobile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #faq {
+    margin: 5vh 0;
+  }
+
+  .faq-title h2 {
+    margin: 0 10vw;
+  }
+
+  .accordion-container-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 5vh;
+    padding: 0;
+  }
+
+  .carousel-image {
+    margin: 5vw;
+  }
+
+  .carousel-item {
+    min-height: 315px;
+  }
+
+  .contact-blurb h2 {
+    font-size: x-large;
+    margin: 2vh 0;
+  }
+
+  .contact-blurb h1 {
+    font-size: xx-large;
+    margin: 2vh 0;
+
+  }
+
+  .contact-blurb h3 {
+    font-size: large;
+    margin: 2vh 0;
+  }
+
+  .contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact-container .btn{
+    width: 100%;
+    margin: 2vh 0;
+  }
+
+  .contact-info{
+    padding: 1vh 0 !important;
+  }
+
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo-container img{
+    width: 50vw;
+  }
+
+  .links-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 3vh 0;
+  }
+
+  .links-container a{
+    margin: 1vh 0;
   }
 }

@@ -50,21 +50,24 @@ export default function Navbar() {
             </div>
             <div className="navLogin">
                 <div className="buttonContainer">
-                    <Button
-                        variant="primary rounded-0"
-                        size=""
-                        href="https://www.creditrestorationportal.com/account/login?fbclid=IwAR3ORa-__TREhUVGqQFhWWl1BEcsxwS9xQ-8d82rmz3oyotNe7baU17LB64"
-                        target="_blank"
-                    >
-                        Client Login
-                    </Button>
-                    <Button
-                        variant="primary rounded-0"
-                        href="https://www.affiliatecreditrepairportal.com/account/login?fbclid=IwAR3ORa-__TREhUVGqQFhWWl1BEcsxwS9xQ-8d82rmz3oyotNe7baU17LB64"
-                        target="_blank"
-                    >
-                        Affiliate Login
-                    </Button>
+                    <div>
+                        <Button
+                            className="login-button"
+                            variant="primary rounded-0"
+                            size=""
+                            href="https://www.creditrestorationportal.com/account/login?fbclid=IwAR3ORa-__TREhUVGqQFhWWl1BEcsxwS9xQ-8d82rmz3oyotNe7baU17LB64"
+                            target="_blank">
+                            Client Login
+                        </Button>
+                    </div>
+                    <div>
+                        <Button
+                            variant="primary rounded-0"
+                            href="https://www.affiliatecreditrepairportal.com/account/login?fbclid=IwAR3ORa-__TREhUVGqQFhWWl1BEcsxwS9xQ-8d82rmz3oyotNe7baU17LB64"
+                            target="_blank">
+                            Affiliate Login
+                        </Button>
+                    </div>
                 </div>
             </div>
         </section>

@@ -5,9 +5,8 @@ import "../App.css"
 
 const Reviews = () => {
   return (
-
     <div className='carousel-image'>
-      <Carousel interval={4000}>
+      <Carousel interval={3500}>
         <Carousel.Item>
           <h3>Natasia</h3>
           <p>
@@ -23,13 +22,15 @@ const Reviews = () => {
           <p>" I had no credit history whatsoever so they recommended credit building products & I was at 680 credit score within a few months."</p>
         </Carousel.Item>
       </Carousel>
-      <style jsx>{`
+      <style jsx>
+        {`
         .carousel-indicators,
         .carousel .carousel-control-prev,
         .carousel .carousel-control-next {
           display: none;
         }
-      `}</style>
+      `}
+      </style>
     </div>
   );
 };

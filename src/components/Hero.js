@@ -16,13 +16,13 @@ const Hero = () => {
             <div className="hero-background">
                 <h1>"ENHANCE YOUR CREDIT & FINANCIAL CREDIBILITY"</h1>
                 <p>Ever wanted to improve your credit score? Or do you want to repair your current credit and make it look better? With PROTOCALL FINANCIAL , say goodbye to bad credit!</p>
-                <div>
-                    <Button href="https://www.creditbuildercard.com/protocallfinancial.html" target="_blank">Get your secured card now!</Button>
-                    <Button href="https://member.identityiq.com/help-you-to-save-money.aspx?offercode=431141T3" target="_blank">Check your credit now!</Button>
+                <div className="mobile-container">
+                    <Button className='hero-button' href="https://www.creditbuildercard.com/protocallfinancial.html" target="_blank"><span>Get your secured card now!</span></Button>
+                    <Button className='hero-button' href="https://member.identityiq.com/help-you-to-save-money.aspx?offercode=431141T3" target="_blank"><span>Check your credit now!</span></Button>
                 </div>
-                <div>
-                    <Button href="https://calendly.com/protocallfinancial" target="_blank">Schedule an Appointment Today!</Button>
-                    <Button className='affiliate-button' onClick={handleModal1Show}>Credit Building Products</Button>
+                <div className="mobile-container">
+                    <Button className='hero-button' href="https://calendly.com/protocallfinancial" target="_blank"><span>Schedule an Appointment Today!</span></Button>
+                    <Button className='affiliate-button hero-button' onClick={handleModal1Show}><span>Credit Building Products</span></Button>
                 </div>
             </div>
 
