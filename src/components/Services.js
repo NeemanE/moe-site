@@ -190,7 +190,9 @@ const Services = () => {
                     <Modal.Title>Business Promotional Products</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <p>Placeholder</p>
+                    <p>Introducing our Business Promotional Products Service!</p>
+                    <p>Are you looking for innovative ways to promote your business and make a lasting impression on your target audience? Look no further! Our Business Promotional Products Service offers a wide range of customizable items that will help you elevate your brand and captivate potential customers.</p>
+                    <p>With our service, you can choose from an extensive selection of high-quality promotional products that are tailored to suit your business needs. From branded apparel and accessories to tech gadgets and office supplies, we have the perfect items to showcase your brand with style and professionalism.</p>
                 </Modal.Body>
             </Modal>
             <Modal show={showModal8} onHide={handleModal8Close} centered>
