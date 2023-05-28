@@ -197,6 +197,10 @@ header span {
   text-align: center;
 }
 
+.service-card img {
+  pointer-events: none;
+}
+
 .card-margin{
   margin-right: 2vw;
 }

@@ -57,18 +57,18 @@ class Services extends React.Component {
           }
           return block;
         });
-  
+
         return {
           id: modal.id,
           title: modal.title,
           body: body
         };
       });
-  
+
       this.setState({ serviceModals });
     });
   };
-  
+
 
   handleModalShow = (modalId) => {
     this.setState({ selectedModal: modalId });
@@ -107,65 +107,71 @@ class Services extends React.Component {
 
 
     return (
-      <div>
-        {groups.map((group, index) => (
-          <CardGroup key={index} className={`service-cardgroup${index + 1}`}>
-            {group.map((card, cardIndex) => (
-              <Card
-                key={card.id}
-                className={`service-card${cardIndex < 2 ? ' card-margin' : ''}`}
-                onClick={() => this.handleModalShow(card.id)}
-              >
-                <Card.Img
-                  variant="top"
-                  src={card.image}
-                  style={{ height: '100%', objectFit: 'cover' }}
-                />
-                <div
-                  style={{
-                    backgroundColor: '#0f3d62',
-                    width: '100%',
-                    position: 'absolute',
-                    bottom: '0',
-                  }}
+      <section id='services'>
+        <div>
+          <h1 className='service-title'>Our Services</h1>
+          <p className='service-text'>We offer a wide range of services to help you achieve your goals. Whether you are looking to start a business, or improve your personal credit, we have the tools you need to succeed. <span id='services-span'>Click below</span> to find out more information about what we can provide for you!</p>
+        </div>
+        <div>
+          {groups.map((group, index) => (
+            <CardGroup key={index} className={`service-cardgroup${index + 1}`}>
+              {group.map((card, cardIndex) => (
+                <Card
+                  key={card.id}
+                  className={`service-card${cardIndex < 2 ? ' card-margin' : ''}`}
+                  onClick={() => this.handleModalShow(card.id)}
                 >
-                  <Card.Title
-                    style={{ textAlign: 'center', color: 'white', padding: '0.5rem' }}
+                  <Card.Img
+                    variant="top"
+                    src={card.image}
+                    style={{ height: '100%', objectFit: 'cover' }}
+                  />
+                  <div
+                    style={{
+                      backgroundColor: '#0f3d62',
+                      width: '100%',
+                      position: 'absolute',
+                      bottom: '0',
+                    }}
                   >
-                    {card.title}
-                  </Card.Title>
-                </div>
-              </Card>
-            ))}
-          </CardGroup>
-        ))}
-        {selectedModal && (
-          <Modal show={selectedModal !== null} onHide={this.handleModalClose}>
-            <Modal.Header closeButton>
-              <Modal.Title>
-                {this.getModalTitle(selectedModal)}
-              </Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-  {serviceModals.find((modal) => modal.id === selectedModal)?.body.map((block, index) => (
-    <p key={index}>{block.children.map((child, childIndex) => (
-      <React.Fragment key={childIndex}>
-        {child.text}
-        {childIndex < block.children.length - 1 && <br />} {/* Add line break after each child */}
-      </React.Fragment>
-    ))}</p>
-  ))}
-</Modal.Body>
+                    <Card.Title
+                      style={{ textAlign: 'center', color: 'white', padding: '0.5rem' }}
+                    >
+                      {card.title}
+                    </Card.Title>
+                  </div>
+                </Card>
+              ))}
+            </CardGroup>
+          ))}
+          {selectedModal && (
+            <Modal show={selectedModal !== null} onHide={this.handleModalClose}>
+              <Modal.Header closeButton>
+                <Modal.Title>
+                  {this.getModalTitle(selectedModal)}
+                </Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                {serviceModals.find((modal) => modal.id === selectedModal)?.body.map((block, index) => (
+                  <p key={index}>{block.children.map((child, childIndex) => (
+                    <React.Fragment key={childIndex}>
+                      {child.text}
+                      {childIndex < block.children.length - 1 && <br />} {/* Add line break after each child */}
+                    </React.Fragment>
+                  ))}</p>
+                ))}
+              </Modal.Body>
 
-            <Modal.Footer>
-              <Button variant="secondary" onClick={this.handleModalClose}>
-                Close
-              </Button>
-            </Modal.Footer>
-          </Modal>
-        )}
+              <Modal.Footer>
+                <Button variant="secondary" onClick={this.handleModalClose}>
+                  Close
+                </Button>
+              </Modal.Footer>
+            </Modal>
+          )}
 
-      </div>
+        </div>
+      </section>
     );
   }
 }
