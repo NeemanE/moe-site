@@ -10,6 +10,8 @@ export default defineConfig({
   projectId: '9z50pvjd',
   dataset: 'production',
 
+  apiurl: 'https://9z50pvjd.api.sanity.io/v1/data/query/production ',
+
   plugins: [deskTool(), visionTool()],
 
   schema: {
