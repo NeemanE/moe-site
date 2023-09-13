@@ -62,11 +62,11 @@ const requestData = {
   transactionKey: transactionKey,
   // Payment amount should be in cents
   amount: paymentAmountCents,
-  // Add other request parameters as neededd
+  // Add other request parameters as needed
 };
 
 axios
-  .post('https://api.authorize.net/xml/v1/request.api', requestData)
+  .post('/api/authorize-net', requestData) // Updated URL
   .then((response) => {
     const formToken = response.data.token; // The form token
     console.log('Form Token:', formToken);
