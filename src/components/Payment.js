@@ -1,4 +1,4 @@
-import { HostedForm } from "react-acceptjs";
+/* import { HostedForm } from "react-acceptjs";
 import axios from "axios";
 
 const authData = {
@@ -46,3 +46,47 @@ const Payment = () => {
 };
 
 export default Payment;
+ */
+
+import { AcceptHosted } from 'react-acceptjs';
+import axios from 'axios'; // Import Axios
+
+const apiLoginId = process.env.REACT_APP_API_LOGIN_ID;
+const transactionKey = process.env.REACT_APP_TRANSACTION_KEY;
+
+// Define the payment amount in cents (1 cent in this example)
+const paymentAmountCents = 1;
+
+const requestData = {
+  apiLoginId: apiLoginId,
+  transactionKey: transactionKey,
+  // Payment amount should be in cents
+  amount: paymentAmountCents,
+  // Add other request parameters as needed
+};
+
+axios
+  .post('https://api.authorize.net/xml/v1/request.api', requestData)
+  .then((response) => {
+    const formToken = response.data.token; // The form token
+    console.log('Form Token:', formToken);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+
+const Payment = ({ formToken }) => {
+  return formToken ? (
+    <AcceptHosted formToken={formToken} integration="redirect">
+      Continue to Redirect
+    </AcceptHosted>
+  ) : (
+    <div>
+      You must have a form token. Have you made a call to the
+      getHostedPaymentPageRequestAPI?
+    </div>
+  );
+};
+
+export default Payment;
+
