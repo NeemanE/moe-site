@@ -554,6 +554,26 @@ footer {
   background-color: #009e08;
 }
 
+iframe{
+  padding: 5%;
+}
+
+.credit-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.sign-up{
+  margin-left: 5vw;
+  padding-top: 5vh;
+}
+
+.sign-p{
+  font-weight: bold;
+  padding-top: 3vh;
+  padding-right: 5vw;
+}
+
 @media screen and (min-width:280px) and (max-width: 359px) {
     .navbar{
       flex-direction: column;

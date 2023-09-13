@@ -1,13 +1,36 @@
-// components/Credit.js
-import React from 'react';
+import React, { useEffect } from "react";
+import Payment from "./Payment";
 
 const Credit = () => {
-    return (
+  return (
+    <section>
+      <div className="credit-row">
         <div>
-            {/* Content of your Credit page goes here */}
-            <h1>Credit Page</h1>
+          <iframe
+            className="credit-iframe"
+            name="frame_lead"
+            id="frame_lead"
+            src="https://www.clientdisputemanager.com/WebLeads?crepto=241483"
+            height="400"
+            width="500"
+            data-txtheaderfontsize="10"
+            data-txtheaderfontcolor="#e8f5f7"
+            data-txtbgcolcor="#ffffff"
+            data-txtheadercolor="#000080"
+            data-txtbuttoncolor="#000080"
+            data-txtcolor="na"
+            frameBorder="0"
+            scrolling="no" // Changed scrolling to "no" to prevent duplicate scrollbars
+          ></iframe>
         </div>
-    );
+        <div className="sign-up">
+          <h1>Sign up to begin your credit restoration journey.</h1>
+            <p className="sign-p">Take the first step to raising your credibility by filling out the form today. We will reach out to you as soon as possible, and you can relax knowing that we here at Protocall will guide you every step of the way.</p>
+        </div>
+        <Payment />
+      </div>
+    </section>
+  );
 };
 
 export default Credit;
