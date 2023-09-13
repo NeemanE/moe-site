@@ -1,4 +1,5 @@
-/* import { HostedForm } from "react-acceptjs";
+import React from "react";
+import { HostedForm } from "react-acceptjs";
 import axios from "axios";
 
 const authData = {
@@ -46,8 +47,8 @@ const Payment = () => {
 };
 
 export default Payment;
- */
 
+/* import React from 'react';
 import { AcceptHosted } from 'react-acceptjs';
 import axios from 'axios'; // Import Axios
 
@@ -90,3 +91,4 @@ const Payment = ({ formToken }) => {
 
 export default Payment;
 
+ */
