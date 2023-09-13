@@ -6,7 +6,7 @@ module.exports = function (app) {
   app.use(
     '/api/authorize-net',
     createProxyMiddleware({
-      target: 'https://api.authorize.net',
+      target: 'https://api.authorize.net/xml/v1/request.api',
       changeOrigin: true,
     })
   );
