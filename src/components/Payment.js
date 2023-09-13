@@ -6,6 +6,7 @@ const authData = {
   clientKey: process.env.REACT_APP_CLIENT_KEY,
   transactionKey: process.env.REACT_APP_TRANSACTION_KEY,
 };
+console.log(authData);
 const Payment = () => {
   // Define the handleSubmit function
   const handleSubmit = async (response) => {
