@@ -62,7 +62,7 @@ const requestData = {
   transactionKey: transactionKey,
   // Payment amount should be in cents
   amount: paymentAmountCents,
-  // Add other request parameters as needed
+  // Add other request parameters as neededd
 };
 
 axios
