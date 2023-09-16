@@ -39,10 +39,76 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <form
+      class="hidden"
+      name="PrePage"
+      method="post"
+      action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx"
+    >
+      <input
+        type="hidden"
+        name="LinkId"
+        value="2ea7ac88-b983-4452-b1c3-66925ffe803e"
+      />
+      <input
+        type="image"
+        src="//content.authorize.net/images/buy-now-blue.gif"
+      />
+    </form>
+    <form
+      class="hidden"
+      name="PrePage"
+      method="post"
+      action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx"
+    >
+      <input
+        type="hidden"
+        name="LinkId"
+        value="0212c3ce-af64-441e-a41b-9b63528240b3"
+      />
+      <input
+        type="image"
+        src="//content.authorize.net/images/buy-now-gold.gif"
+      />
+    </form>
+    <form
+      class="hidden"
+      name="PrePage"
+      method="post"
+      action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx"
+    >
+      <input
+        type="hidden"
+        name="LinkId"
+        value="d8cf079b-ba18-4b38-8dd2-2160e69154b3"
+      />
+      <input
+        type="image"
+        src="//content.authorize.net/images/buy-now-gray.gif"
+      />
+    </form>
+
+    <!-- Calendly badge widget begin -->
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        Calendly.initBadgeWidget({
+          url: "https://calendly.com/protocallfinancial",
+          text: "Schedule a free consultation!",
+          color: "#0069ff",
+          textColor: "#ffffff",
+          branding: true,
+        });
+      };
+    </script>
+    <!-- Calendly badge widget end -->
   </body>
-  <script
-    type="text/javascript"
-    src="https://js.authorize.net/v3/AcceptUI.js"
-    charset="utf-8"
-  ></script>
 </html>

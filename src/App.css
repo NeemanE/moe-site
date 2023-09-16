@@ -1,3 +1,34 @@
+.hidden{
+  display: none;
+}
+
+.authForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh; /* This will center vertically within the viewport */
+}
+
+.package-table{
+  text-decoration: none;
+  list-style: none;
+  font-weight: lighter;
+}
+
+.package-name{
+  font-weight: bold;
+}
+
 header {
   background-color: #0F3D62;
   color: white;
@@ -222,7 +253,7 @@ header span {
 
 .text-container {
   width: 50%;
-  margin-top: 25%;
+  
   padding: 0 5vw;
 }
 
@@ -305,7 +336,7 @@ header span {
   list-style-type: none;
   padding: 0;
   line-height: 2.5;
-  text-align: center;
+  text-align: left;
 
 }
 
@@ -899,5 +930,29 @@ iframe{
 
   .links-container a{
     margin: 1vh 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .centered-container {
+    padding: 10px; /* Add some padding for better spacing on mobile */
+  }
+
+  .package-name {
+    font-size: 20px; /* Adjust font size for package names */
+  }
+
+  .package-table {
+    margin-left: 0; /* Remove left margin for the feature list */
+  }
+
+  .package-table li {
+    font-size: 14px; /* Adjust font size for feature list items */
+  }
+
+  /* Adjust iframe size for better mobile display */
+  .credit-iframe {
+    width: 100%;
+    height: auto;
   }
 }
