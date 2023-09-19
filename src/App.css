@@ -628,6 +628,7 @@ iframe{
       margin: 0;
       padding: 0; 
     }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -931,28 +932,33 @@ iframe{
   .links-container a{
     margin: 1vh 0;
   }
-}
 
-@media (max-width: 480px) {
-  .centered-container {
-    padding: 10px; /* Add some padding for better spacing on mobile */
+  .credit-row{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
   }
 
-  .package-name {
-    font-size: 20px; /* Adjust font size for package names */
+  iframe{
+    padding: 0;
+    padding-bottom: 10vh;
+    width: 100%;margin-left: 5vh;
+    
   }
 
-  .package-table {
-    margin-left: 0; /* Remove left margin for the feature list */
+  .centered-container{
+    height: initial;
+    font-size: smaller;
+  
   }
 
-  .package-table li {
-    font-size: 14px; /* Adjust font size for feature list items */
-  }
-
-  /* Adjust iframe size for better mobile display */
-  .credit-iframe {
+  .sign-up{
+    text-align: center;
     width: 100%;
-    height: auto;
+    margin-left: 5vh;
+  }
+
+  .package-table{
+    font-weight: 500;
   }
 }

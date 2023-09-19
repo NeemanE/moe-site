@@ -22,7 +22,7 @@ const Contact = () => {
 
         emailjs
             .sendForm(
-                'YOUR_SERVICE_ID',
+                'service_urw7r8c',
                 'YOUR_TEMPLATE_ID',
                 event.target,
                 'YOUR_USER_ID'

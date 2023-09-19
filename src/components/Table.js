@@ -1,12 +1,12 @@
 import React from "react";
 import { FaArrowCircleRight, FaCheck } from "react-icons/fa";
-
+import "../CreditRepairPackages.css"; // Import a CSS file for styling
 
 const CreditRepairPackages = () => {
   return (
     <div className="centered-container">
       <h2>Credit Repair Packages</h2>
-      <table>
+      <table className="outlined-table"> {/* Add a class to the table */}
         <thead>
           <tr>
             <th>Package</th>
@@ -16,7 +16,7 @@ const CreditRepairPackages = () => {
         </thead>
         <tbody>
           <tr>
-            <td classname="package-name">Starter Package</td>
+            <td className="package-name">Starter Package</td>
             <td>
               <ul className="package-table">
                 <li>Standard Negative Deletions</li>
@@ -48,13 +48,13 @@ const CreditRepairPackages = () => {
             </td>
           </tr>
           <tr>
-            <td classname="package-name">General Package</td>
+            <td className="package-name">General Package</td>
             <td>
               <ul className="package-table">
                 <li>Minimum Negative Deletions</li>
                 <li>Minimum Credit Disputes</li>
                 <li>Correct Payment History</li>
-                <li>New trade lines up to $3500.00 – additional fees apply</li>
+                <li>New trade lines up to $3500.00 - additional fees apply</li>
                 <li>Includes Opt-Out Reporting</li>
                 <li>Up to 20 deletions and 20 late payments updated</li>
               </ul>
@@ -78,7 +78,7 @@ const CreditRepairPackages = () => {
             </td>
           </tr>
           <tr>
-            <td classname="package-name">Premium Package Advanced</td>
+            <td className="package-name">Premium Package Advanced</td>
             <td>
               <ul className="package-table">
                 <li>
@@ -89,7 +89,7 @@ const CreditRepairPackages = () => {
                 <li>Bad Debt Collector Disputes</li>
                 <li>Correct Negative Payment Histories</li>
                 <li>
-                  Access to New Lines of credit up to $3,500.00 – additional
+                  Access to New Lines of credit up to $3,500.00 - additional
                   fees apply
                 </li>
                 <li>Includes Opt-Out Reporting</li>

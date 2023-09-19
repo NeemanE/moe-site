@@ -1,0 +1,21 @@
+.outlined-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .outlined-table th, .outlined-table td {
+    border: 1px solid #ddd; /* Add border to cells */
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .outlined-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .package-name {
+    font-weight: bold;
+  }
+
+  
+  

@@ -15,7 +15,7 @@ export default function Navbar() {
     return (
         <section className="navbar">
             <div>
-                <a href="https://protocallfinancial.com/">
+                <a href="goodcreditgoodlife.com/">
                     <img src={protocallLogo} alt="Protocall Financial Logo" />
                 </a>
             </div>
