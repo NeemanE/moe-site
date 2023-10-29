@@ -43,7 +43,7 @@ export default function Pricing() {
         </div>
         <div className="circle circle1">
           <h3>
-            <span className="price-cost">$99</span> <br /> Enrollment Fee
+            <span className="price-cost">$99</span> <br /> Monthly
           </h3>
         </div>
       </div>
