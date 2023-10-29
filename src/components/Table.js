@@ -11,15 +11,15 @@ const CreditRepairPackages = () => {
           <tr>
             <th>Package</th>
             <th>Features</th>
-            <th>Form</th>
+            <th>Purchase Now!</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td className="package-name">Starter Package</td>
+            <td className="package-name">Starter Package - $99.99</td>
             <td>
               <ul className="package-table">
-                <li>Standard Negative Deletions</li>
+                <li>Minimum Negative Deletions</li>
                 <li>Minor Disputes</li>
                 <li>Basic Clean Up</li>
                 <li>Includes Opt-Out Reporting</li>
@@ -48,11 +48,11 @@ const CreditRepairPackages = () => {
             </td>
           </tr>
           <tr>
-            <td className="package-name">General Package</td>
+            <td className="package-name">General Package - $149.99</td>
             <td>
               <ul className="package-table">
-                <li>Minimum Negative Deletions</li>
-                <li>Minimum Credit Disputes</li>
+                <li>Standard Negative Deletions</li>
+                <li>Standard Credit Disputes</li>
                 <li>Correct Payment History</li>
                 <li>New trade lines up to $3500.00 - additional fees apply</li>
                 <li>Includes Opt-Out Reporting</li>
@@ -78,7 +78,7 @@ const CreditRepairPackages = () => {
             </td>
           </tr>
           <tr>
-            <td className="package-name">Premium Package Advanced</td>
+            <td className="package-name">Premium Package - $349.99</td>
             <td>
               <ul className="package-table">
                 <li>
@@ -119,7 +119,7 @@ const CreditRepairPackages = () => {
       <p>
         Payment plans available! Please note, trade-lines have a one-time set-up
         fee which is paid by the customer. Call today for more information on
-        how we can put you on the road to “good credit” with immediate results.
+        how we can get you both good credit and a good life.
       </p>
     </div>
   );
