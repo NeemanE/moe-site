@@ -78,6 +78,29 @@ const CreditRepairPackages = () => {
             </td>
           </tr>
           <tr>
+            <td className="package-name">Advanced Package - $249.99</td>
+            <td>
+              <ul className="package-table">
+                <li>
+                  Advanced Deletions and Public records (repossessions,
+                  bankruptcy, tax liens and judgments, etc.)
+                </li>
+                <li>Hard Credit Disputes</li>
+                <li>Bad Debt Collector Disputes</li>
+                <li>Correct Negative Payment Histories</li>
+                <li>
+                  Access to New Lines of credit up to $1,500.00 - additional
+                  fees apply
+                </li>
+                <li>Includes Opt-Out Reporting</li>
+                <li>Up to 50 Deletions / Up to 50 Late Payments Updated</li>
+              </ul>
+            </td>
+            <td>
+               <form name="PrePage" method = "post" action = "https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx"> <input type = "hidden" name = "LinkId" value ="dfae28aa-7845-482f-b32f-9b4fb24d68c9" /> <input type = "image" src ="//content.authorize.net/images/buy-now-gold.gif" /> </form> 
+            </td>
+          </tr>
+          <tr>
             <td className="package-name">Premium Package - $349.99</td>
             <td>
               <ul className="package-table">

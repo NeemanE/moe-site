@@ -17,7 +17,7 @@ const Hero = () => {
                 <h1>"ENHANCE YOUR CREDIT & FINANCIAL CREDIBILITY"</h1>
                 <p>Ever wanted to improve your credit score? Or do you want to repair your current credit and make it look better? With PROTOCALL FINANCIAL , say goodbye to bad credit!</p>
                 <div className="mobile-container">
-                    <Button className='hero-button' href="/credit" target="_blank"><span>Sign up now!</span></Button>
+                    <Button className='hero-button' href="/credit" target="_blank"><span>Join us now!</span></Button>
                     <Button className='hero-button' href="https://www.smartcredit.com/?PID=60642" target="_blank"><span>Check your credit now!</span></Button>
                 </div>
                 <div className="mobile-container">
