@@ -17,12 +17,12 @@ const Hero = () => {
                 <h1>"ENHANCE YOUR CREDIT & FINANCIAL CREDIBILITY"</h1>
                 <p>Ever wanted to improve your credit score? Or do you want to repair your current credit and make it look better? With PROTOCALL FINANCIAL , say goodbye to bad credit!</p>
                 <div className="mobile-container">
-                    <Button className='hero-button' href="/credit" target="_blank"><span>Join us now!</span></Button>
-                    <Button className='hero-button' href="https://www.smartcredit.com/?PID=60642" target="_blank"><span>Check your credit now!</span></Button>
+                    <Button className='hero-button buttong' href="/credit" target="_blank"><span>Start Fresh with Us—Repair Your Credit Now</span></Button>
+                    <Button className='hero-button buttonr' href="https://www.smartcredit.com/?PID=60642" target="_blank"><span>Check your credit now!</span></Button>
                 </div>
                 <div className="mobile-container">
-                    <Button className='hero-button' href="https://calendly.com/protocallfinancial" target="_blank"><span>Schedule an Appointment Today!</span></Button>
-                    <Button className='affiliate-button hero-button' onClick={handleModal1Show}><span>Credit Building Products</span></Button>
+                    <Button className='hero-button buttonp' href="https://calendly.com/protocallfinancial" target="_blank"><span>Schedule an Appointment Today!</span></Button>
+                    <Button className='affiliate-button hero-button buttono' onClick={handleModal1Show}><span>Credit Building Products</span></Button>
                 </div>
             </div>
 
